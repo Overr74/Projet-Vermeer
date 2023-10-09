@@ -1,4 +1,4 @@
-/* styles.css */
+/* style.css */
 
 /* Styles généraux */
 body {
@@ -31,13 +31,13 @@ nav a {
     text-decoration: none;
 }
 
-/* Styles spécifiques pour les sections */
+/* Style spécifiques pour les sections */
 section {
     margin-top: 30px;
     padding: 20px;
 }
 
-/* Styles spécifiques pour le carrousel */
+/* Style spécifiques pour le carrousel */
 #carousel {
     /* Styles du carrousel ici */
 }
