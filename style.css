@@ -2,11 +2,15 @@
 
 /* Styles généraux */
 body {
-    background: url('https://github.com/Overr74/Projet-Vermeer/blob/main/NapoleonOnStHelena.jpg') no-repeat center center fixed;
+    background: url ('https://github.com/Overr74/Projet-Vermeer/blob/main/NapoleonOnStHelena.jpg');
     background-size: cover;
+    background-attachment: fixed; /* Empêche le défilement de l'image de fond */
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #333; /* Couleur du texte sur l'image de fond */
 }
 
 /* En-tête */
