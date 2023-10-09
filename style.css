@@ -2,15 +2,16 @@
 
 /* Styles généraux */
 body {
-    background: url('nom-de-votre-image.jpg') no-repeat center center fixed; /* Chemin vers votre image */
+    background: url('nom-de-votre-image.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* En-tête */
 header {
-    background-color: #666; /* Couleur grise pour l'en-tête */
+    background-color: #666;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -27,17 +28,30 @@ nav li {
 }
 
 nav a {
-    color: #3498db; /* Couleur bleu clair pour les liens */
+    color: #3498db;
     text-decoration: none;
 }
 
-/* Style spécifiques pour les sections */
+/* Sections */
 section {
     margin-top: 30px;
     padding: 20px;
 }
 
-/* Style spécifiques pour le carrousel */
+/* Carrousel */
 #carousel {
     /* Styles du carrousel ici */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333; /* Couleur gris foncé pour le pied de page */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 12px;
+    opacity: 0.7; /* Opacité pour le watermark */
 }
