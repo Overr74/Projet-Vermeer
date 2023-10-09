@@ -17,6 +17,14 @@ header {
     padding: 20px 0;
 }
 
+#site-title {
+    font-size: 36px; /* Taille du texte du titre */
+    font-weight: bold; /* Texte en gras */
+    font-style: italic; /* Texte en italique */
+    margin: 0; /* Supprime la marge par défaut du titre */
+    padding: 10px 0; /* Ajoute de l'espace autour du titre */
+    background: linear-gradient(to right, #333, transparent); /* Fond gris foncé dégradé qui se dégarnit */
+
 nav ul {
     list-style-type: none;
     padding: 0;
