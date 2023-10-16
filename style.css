@@ -1,8 +1,7 @@
-/* style.css */
-
 /* Styles généraux */
+
 body {
-    background: url ('https://github.com/Overr74/Projet-Vermeer/blob/main/NapoleonOnStHelena.jpg');
+    background-image: url ('https://github.com/Overr74/Projet-Vermeer/blob/main/NapoleonOnStHelena.jpg');
     background-size: cover;
     background-attachment: fixed; /* Empêche le défilement de l'image de fond */
     background-repeat: no-repeat;
