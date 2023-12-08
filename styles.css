@@ -1,0 +1,173 @@
+/* Styles généraux */
+body {
+    background-color: #f0e8d3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background: url('/IMAGES/image1.png') center center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#site-title {
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Nav bar */
+nav {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Fond plus transparent */
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #4d4d4d;
+    top: 0;
+    align-items: center;
+    margin: 5px;
+
+}
+
+nav ul {
+    position: relative;
+    display: inline-block;
+}
+
+nav li {
+    padding: 5px;
+    margin: 6px;
+    align-items: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 2px solid #4d4d4d;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
+.map-container {
+    position: relative;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    max-height: 200px;
+}
+
+/* Informations Utiles */
+#information-utile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3e8d9;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#Critique-vidéo,
+#histoire-vermeer,
+#oeuvres-vermeer,
+#histoire-oeuvres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3e8d9;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#info-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur des écrans plus petits */
+}
+
+#map-container {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#texte-prix-container {
+    width: calc(100% - 20px);
+    margin-top: 20px;
+}
+
+#Critique-vidéo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3e8d9;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#video-container {
+    margin-bottom: 20px;
+}
+
+.oeuvres-vermeer {
+    position: relative;
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+
+img { /* Agathe */
+    width: 20%;
+    align-items: center;
+    margin: 1em; /* espace de 1 élément */
+    padding: 5px;
+}
+
+/* Ajouter des règles de médias pour rendre le site plus réactif */
+@media screen and (max-width: 768px) {
+    #site-title {
+        font-size: 36px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+    }
+
+    #info-container {
+        flex-direction: column;
+    }
+
+    #texte-prix-container {
+        width: 100%;
+    }
+}
+
+/* Pied de page */
+footer {
+    background-color: #4d4d4d;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
