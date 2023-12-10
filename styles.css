@@ -1,6 +1,6 @@
 /* Styles généraux */
 body {
-    background-color: #f0e8d3;
+    background-color: #D2B48C;
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,10 +30,10 @@ header {
 /* Nav bar */
 nav {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Fond plus transparent */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond plus transparent */
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #4d4d4d;
+    border-bottom: 2px solid #333;
     top: 0;
     align-items: center;
     margin: 5px;
@@ -65,12 +65,18 @@ nav a:hover {
     color: #fff;
 }
 
-.map-container {
-    position: relative;
-    align-items: center;
-    margin: auto;
-    max-width: 600px;
-    max-height: 200px;
+/* Nouvelle classe pour la carte */
+.map-container-fullwidth {
+    width: 100%; /* Utiliser 100% de la largeur disponible */
+    max-width: none; /* Supprimer la limite maximale de largeur */
+    margin: 0 auto; /* Centrez horizontalement le conteneur */
+    overflow: hidden; /* Empêcher le débordement horizontal */
+}
+
+/* Styliser la carte spécifique à cette classe */
+.map-container-fullwidth iframe {
+    width: 100%; /* Utiliser 100% de la largeur du conteneur */
+    max-width: none; /* Supprimer la limite maximale de largeur */
 }
 
 /* Informations Utiles */
@@ -86,7 +92,7 @@ nav a:hover {
 #Critique-vidéo,
 #histoire-vermeer,
 #oeuvres-vermeer,
-#histoire-oeuvres {
+#vermeer-au-louvre {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,9 +116,12 @@ nav a:hover {
 #texte-prix-container {
     width: calc(100% - 20px);
     margin-top: 20px;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
 }
 
-#Critique-vidéo {
+#Le-Chapeau-de-Vermeer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +134,12 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+#histoire-vermeer p {
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+}
+
 .oeuvres-vermeer {
     position: relative;
     margin: auto;
@@ -132,12 +147,31 @@ nav a:hover {
     display: flex;
 }
 
-img { /* Agathe */
-    width: 20%;
-    align-items: center;
-    margin: 1em; /* espace de 1 élément */
-    padding: 5px;
+#imageContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
 }
+
+.oeuvre {
+    text-align: center;
+}
+
+.randomImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alignement avec les autres éléments */
+#information-utile,
+#Critique-vidéo,
+#histoire-vermeer,
+#vermeer-au-louvre {
+    text-align: center;
+}
+
 
 /* Ajouter des règles de médias pour rendre le site plus réactif */
 @media screen and (max-width: 768px) {
@@ -160,6 +194,9 @@ img { /* Agathe */
     #texte-prix-container {
         width: 100%;
     }
+    #imageContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Pied de page */
@@ -170,4 +207,43 @@ footer {
     padding: 10px 0;
     font-size: 14px;
     opacity: 0.8;
+}
+
+/* Styles pour la fenêtre pop-up de consentement aux cookies */
+.cookie-consent-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#accept-cookies-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#refuse-cookies-btn {
+    background-color: #af4c4c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
 }
